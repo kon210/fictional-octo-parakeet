@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>朝食食べましょう</title>
+    <meta charset="UTF-8">
+    
+    <style>
+      body{
+    background-color:#fff4ea;
+    width:700px;
+margin-right: auto;
+margin-left : auto;
+    }
+    
+    .box55 {
+	margin: 2em auto;
+	padding:2em;/*内側余白*/
+	border-radius: 30px 60px/60px 30px;
+	border: solid 8px #ccc7be;
+}
+
+ .box56 {
+	margin: 2em auto;
+	padding:2em;/*内側余白*/
+	border-radius: 30px 60px/60px 30px;
+	border: solid 8px #999290;
+}
+
+
+.head_test {
+    margin:  0;                 /* デフォルトCSS打ち消し */
+    font-size:  24px;           /* 文字サイズ指定 */
+    position:  relative;        /* 位置調整 */
+    font-weight:  normal;       /* 文字の太さ調整 */
+    display:  inline-block;     /* インラインブロックにする */
+    padding-top: 40px;          /* 余白指定 */
+    padding-left: 40px;         /* 余白指定 */
+    padding-bottom: 20px;       /* 余白指定 */
+}
+
+.head_test:before {
+    content:  '';               /* 空白の要素を作る */
+    background-color: #ffeaac;  /* 背景色指定 */
+    display:  block;            /* ブロック要素にする */
+    position:  absolute;        /* 位置調整 */
+    left:  0;                   /* 位置調整 */
+    height: 90px;               /* 高さ指定 */
+    width: 90px;                /* 幅指定 */
+    border-radius:  50%;        /* 丸くする */
+    top: 0;                     /* 位置調整 */
+    z-index:  -1;               /* 重なり調整 */
+}
+
+
+    h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  text-align: center;
+}
+h3::before,
+h3::after {
+  content: '';
+  width: 70px;
+  height: 3px;
+  background-color: #ffddbc;
+}
+h3::before {
+  margin-right: 20px;
+}
+h3::after {
+  margin-left: 20px;
+}
+
+
+    
+    
+    
+    p.img_center{
+  text-align: center;
+}
+
+
+#center_Box{
+  width:100px;
+  height:100px;
+  margin:auto;
+}
+
+
+.balloon-shadow{
+  position: relative;
+  padding: 20px;
+  background-color: #e9dacb; 
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px 0px #b3a79b;/*影*/
+  margin-bottom: 2em;
+   text-align: center;
+}
+
+/* 三角アイコン */
+.balloon-shadow::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 300px;
+  bottom: -15px;
+  border-top: 15px solid #e9dacb;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+
+/* 三角アイコンの影 */
+.balloon-shadow::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 305px;
+  bottom: -18px;
+  border-top: 15px solid #b3a79b;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+
+
+
+吹き出し
+
+.bubble9 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+.bubble9 .imgs {
+  float: right;
+  margin-right: 0px;
+  width: 60px;
+}
+.bubble9 .imgs img{
+  width: 95%;
+  height: auto;
+  border: solid 3px #a2d7dd;
+  border-radius: 50%;
+}
+.bubble9 .chat {
+  width: 100%;
+}
+.ss {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #a2d7dd;
+}
+.ss:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  right: -24px;
+  border: 12px solid transparent;
+  border-left: 12px solid #a2d7dd;
+}
+.ss p {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+
+
+
+
+.box81 {
+	margin: 2em auto;
+	padding:1em 2em 2em;
+	background-color: #E8EAF0; /* 背景色 */
+	border-radius:1px;/*ボックス角の丸み*/
+}
+
+.box81 .box-title {
+	color: #b4bbce ; /* タイトル文字色 */
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.box81 .box-title:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f304";
+	font-size: 18px;
+	margin: 0 3px 0 0;
+	font-weight: bold;
+}
+
+
+
+    
+    </style>
+    
+    </head>
+  <body>
+   <h3>朝食の大切さ</h3>
+  
+  <h2 class="head_test">
+  朝食はなんで食べなきゃいけないの？
+  </h2>
+  <div class="box55">
+  <p>朝食は脳などの重要な器官を動かすために必要なエネルギーになる！<br>
+  そのため、朝食がないとうまく働かない…。
+  </p>
+  <h4>朝食を食べるメリット</h4>
+  <li>脳のエネルギー源であるグルコースが脳に供給⇒集中力、作業能力が高まる！</li>
+  <li>朝食をとることにより！</li>
+  <li>体内時計が整えられて<font color="red">健康な体</font>になる！</li>
+</div>
+
+
+  <div class="bubble9">
+  <div class="imgs">
+    <img src="https://www.city.sapporo.jp/kitaku/syoukai/character/shiyo/download/documents/33kaodake-s.jpg" alt="">
+  </div>
+  
+  <div class="chat">
+    <div class="ss">
+      <p>朝食を食べると仕事や勉学に集中して取り組めるようになるんだね</p>
+    </div>
+  </div>
+    </div>
+    <br>
+    
+   <h2 class="head_test">
+   朝食を食べたことにより改善された事例
+    </h2>
+     <div class="box56">
+  
+     <p>
+    ある高校ではわずか220人の生徒が年間で<strong>2200人</strong>も保健室に来ていた。
+    <br>また、生徒の4人に1人が朝食を抜いている生活だった。<br>     
+    この事態を改善すべく養護教諭と家族で連携し毎朝、朝食を食べるようにした結果、<br>
+    2年後には保健室来室人数はなんと<strong>800人</strong>まで激減した。
+     </p>   
+       </div>
+    
+    
+ <div class="bubble9">
+  <div class="imgs">
+    <img src="https://www.city.sapporo.jp/kitaku/syoukai/character/shiyo/download/documents/33kaodake-s.jpg" alt="">
+  </div>
+    <div class="chat">
+    <div class="ss">
+      <p>朝食を食べて体調の改善、便秘の解消になった子もいるみたい！</p>
+    </div>
+  </div>
+    </div>    
+    <br>
+    
+    
+    <h2 class="head_test">
+ 朝食を食べない生活をつづけると？
+  </h2>
+  <div class="box55">
+  <p></p>
+  
+  
+    </div>
+    
+    
+    
+    
+        <h2 class="head_test">
+ 
+  </h2>
+  <div class="box56">
+  
+  
+    </div>
+    
+    
+  <div class="balloon-shadow">
+
+ 作成：藤女子大学　人間生活学部　食物栄養学科　中村詩音
+  </div>
+ 
+  <p class="img_center">
+  <img src="https://www.city.sapporo.jp/kitaku/syoukai/character/shiyo/download/documents/12oisyasan-s.jpg"width="120" height="170">
+  	</p>
+  	
+  	<div class="box81">
+<div class="box-title">MEMO</div>
+  	<p>参考文献：科学が証明する新・朝食のすすめ　香川靖雄　女子栄養大学出版部</p>
+</div>
+    
+  </body>
+</html>
